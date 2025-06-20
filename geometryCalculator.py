@@ -32,7 +32,7 @@ if shape == "r":
   #1 print("The area of shape is: " + str(area))
 
 elif shape == "t":
-  base - float(input("Enter the base: "))
+  base = float(input("Enter the base: "))
   height = float(input("Enter the height: "))
   area = areaTriangle(base, height)
   print(f"The area of the triangle is: {area:.2f}")
