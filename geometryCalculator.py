@@ -3,36 +3,19 @@ import math
 
 # --- Functions ---
 def areaRectangle(length, width):
-    """
-    Calculate and return the area of a rectangle.
-    Parameters:
-      length (float): length of the rectangle
-      width (float): width of the rectangle
-    Returns:
-      float: area of the rectangle
-    """
-    print("TODO: Implement rectangle area function")
+  #area = length * width 
+  #return area
+  return length * width
 
-def areaTriangle(base, height):
-    """
-    Calculate and return the area of a triangle.
-    Parameters:
-      base (float): base length of the triangle
-      height (float): height of the triangle
-    Returns:
-      float: area of the triangle
-    """
-    print("TODO: Implement triangle area function")
-
+def areaTriangle(base, height): 
+  #area = 0.5 * base * height
+  #return area
+  return 0.5 * base * height
+  
 def areaCircle(radius):
-    """
-    Calculate and return the area of a circle.
-    Parameters:
-      radius (float): radius of the circle
-    Returns:
-      float: area of the circle
-    """
-    print("TODO: Implement circle area function")
+  #area = math.pi * (radius * radius)
+  #return area
+  return math.pi * (radius * radius)
 
 # --- Main Program ---
 
@@ -41,31 +24,23 @@ print("Enter 'R' for Rectangle, 'T' for Triangle, or 'C' for Circle.")
 
 shape = input("Your choice: ").strip().lower()
 
-# these are called conditionals, there will be more information about them next week
-# they are meant to check if a condition is true, if so, it runs
-# for now, just use this template we gave you :)
 if shape == "r":
-    # TODO: Ask for length and width as floats
-    # length = float(input("Enter the length: "))
-    # width = float(input("Enter the width: "))
-    # TODO: Calculate area using areaRectangle()
-    # TODO: Print the result nicely formatted
-    pass
+  length = float(input("Enter the length: "))
+  width = float(input("Enter the width: "))
+  area = areaRectangle(length, width)
+  print(f"The area of the rectangle is: {area:.2f}")
+  #1 print("The area of shape is: " + str(area))
 
 elif shape == "t":
-    # TODO: Ask for base and height as floats
-    # base = float(input("Enter the base: "))
-    # height = float(input("Enter the height: "))
-    # TODO: Calculate area using areaTriangle()
-    # TODO: Print the result nicely formatted
-    pass
+  base - float(input("Enter the base: "))
+  height = float(input("Enter the height: "))
+  area = areaTriangle(base, height)
+  print(f"The area of the triangle is: {area:.2f}")
 
 elif shape == "c":
-    # TODO: Ask for radius as a float
-    # radius = float(input("Enter the radius: "))
-    # TODO: Calculate area using areaCircle()
-    # TODO: Print the result nicely formatted
-    pass
+  radius = float(input("Enter the radius: "))
+  area = areaCircle(radius)
+  print(f"The area of the circle is: {area:.2f}")
 
 else:
     print("Invalid shape choice. Please run the program again and choose R, T, or C.")
